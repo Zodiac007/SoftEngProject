@@ -1,0 +1,223 @@
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+/*HEADER*/
+.menubar{
+
+  height: auto;
+  width: 100%;
+}
+.navbar-default{
+  background: white;
+  height: 75px;
+  border-bottom: none;
+  overflow: hidden;
+  -webkit-transition:.1s;
+  -moz-transition:.1s;
+  -ms-transition:.1s;
+  -o-transition:.1s;
+  transition: .1s;
+}
+.navbar-nav{
+  /*color: red;*/
+  float: right;
+  margin: 17px 23px;
+  margin-right: 0;
+}
+.navbar-default .navbar-nav > li > a{
+  color: black
+  text-transform: uppercase;
+}
+.navbar-default .navbar-default > li > a:focus, .navbar-default .navbar-default > li > a:hover{
+  color: red;
+}
+ul.cus-nav li{
+  color:#fff;
+  list-style: none;
+  float: left;
+  padding-left: 20px;
+}
+ul.cus-nav li a {
+     text-decoration: none;
+     padding: 10px;
+     color: red;
+     position: relative;
+}
+ul.cus-nav li a:before{
+  border-left:1px solid red;
+  border-right:1px solid red;
+  transform:scale(1,0);
+}
+ul.cus-nav li a:after{
+  border-top:1px solid red;
+  border-bottom:1px solid red;
+  transform:scale(0,1);
+}
+ul.cus-nav li a:before ul.cus-nav li a:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transition: opacity 0.35s,transform 0.35s ease;
+}
+ul.cus-nav li a:hover:before ul.cus-nav li a:hover:after{
+  transition: 0.35s;
+  transform: scale(1);
+  color: red;
+}
+.site-title{
+  padding: 0;
+}
+.site-title h3{
+  width: 400px;
+  font-size: 23px;
+  color: black;
+  font-weight: 800;
+  margin-top: 24px;
+  letter-spacing: 1px;
+}
+.site-title h5{
+  width: 400px;
+  font-weight: 550;
+}
+.navbar-toggle{
+  position:relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top:-46px;
+  margin-right: 15px;
+  margin-bottom:8px;
+  color:black;
+  background-image: none;
+  border: 1px solid red;
+  border-radius: 4px;
+}
+
+/*IMAGE AND LOGIN AREA*/
+.bg-img {
+  /* The image used */
+  background-image: url("image/2.jpg");
+
+  /* Control the height of the image */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.form-container {
+  position: absolute;
+  right: 0;
+  top:96px;
+  left: 220px;
+  margin: 20px;
+  width: 500px;
+  height: 400px;
+  padding: 90px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: 1px solid black;
+  background: white;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: white;
+  outline: none;
+}
+.check
+/* Set a style for the submit button */
+.btn {
+  background-color: #0490FE;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+.bttn{
+  color: #0490FE;
+  font-size: 20px;
+}
+.forgot {
+  margin-top: -5px;
+  text-align: right;
+  margin-bottom:10px;
+}
+
+.login
+{
+  font-size: 23px;
+color:blue;
+position: absolute;
+left: 0;
+top: 50px;
+height: 40px;
+width: 250px;
+text-align: center;
+vertical-align: middle;
+line-height: 40px;
+cursor: pointer;
+}
+.register
+{
+  font-size: 23px;
+  color: blue;
+  position: inherit;
+  right: 0;
+  top: 50px;
+  height: 40px;
+  width:250px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+
+
+/*Footer*/
+footer{
+    width: 100%;
+    background-color: #3f3f3f;
+    padding: 2% 2% 3% 2%;
+    color: #fff;
+
+}
+.spn{
+    color: white;
+    font-size:3vmin;
+    margin-top: 10px;
+}
+.h4{
+    font-weight: 600;
+    font-size: 3vmin;
+}
+.f-para{
+    font-size:3vmin;
+}
+.foot-img{
+    height: 120px;
+    width: 120px;
+    margin: 20px 100px;
+}
